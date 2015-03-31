@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Konami Code</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <div class="image-wrap">
+            <img src="konami.jpg" alt="">
+        </div>
+
+        <script src="lib/jquery.js"></script>
+        <script src="lib/getimagedata.js"></script>
+        <script src="lib/greyscale.js"></script>
+        <script src="lib/konami-code.js"></script>
+        <script>
+            var isKonami = false;
+
+            // enable konami code
+            konami = new Konami();
+            konami.code = function() {
+
+                // condition : konami code already set?
+                if (isKonami) {
+                    greyscale.hideGreyscaleImages();
+                } else {
+                    greyscale.showGreyscaleImages();
+                }
+
+                // switch state
+                isKonami = !isKonami;
+            };
+
+            konami.load();
+        </script>
+        <script src="http://thegingerbloke.github.io/lab-badge/lab-badge.min.js"></script>
+    </body>
+</html>

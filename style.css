@@ -1,0 +1,43 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    background: #fff;
+}
+
+.image-wrap {
+    position: relative;
+    margin: 2em;
+}
+
+/* BW image container */
+    .bw-wrap {
+        display:block;
+        position:relative;
+    }
+
+    .bw-wrap img {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+
+    .bw-wrap img.bw {
+        z-index:2;
+    }
+
+    .bw-wrap img.original {
+        z-index:1;
+    }
+
+    .bw-wrap span.loader {
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background:url(./bw-ajax-loader.gif) no-repeat 10px 10px;
+        background-color:rgba(200, 200, 200, 0.3);
+        z-index:10;
+    }
