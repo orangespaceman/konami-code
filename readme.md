@@ -2,8 +2,8 @@
 
 ## Post
 
- - [http://petegoodman.com/labs/konami-code/](http://petegoodman.com/labs/konami-code/)
+ - [https://f90.co.uk/labs/konami-code/](https://f90.co.uk/labs/konami-code/)
 
 ## Example
 
- - [http://thegingerbloke.github.io/konami-code](http://thegingerbloke.github.io/konami-code)
+ - [https://orangespaceman.github.io/konami-code](https://orangespaceman.github.io/konami-code)
